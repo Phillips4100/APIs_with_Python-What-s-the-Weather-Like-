@@ -1,4 +1,4 @@
-# Python & APIs - What's the Weather Like?
+## Python & APIs - What's the Weather Like?
 
 
 In this activity I used what I had learned about Python requests, APIs, and JSON traversals to answer some questions. I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, I utilized a citipy, the OpenWeatherMap API and a few other Python libraries (matplotlib, scipy, pandas) to create a representative model of weather across world cities.
@@ -12,7 +12,7 @@ The first requirement was to create a series of scatter plots to showcase the fo
 
 ![Temperature](WeatherPy/TemperatureInWorldCities.png)
 
-Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+The next objective was to run a linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
 * Southern Hemisphere - Temperature (F) vs. Latitude
@@ -23,20 +23,9 @@ Your second requirement is to run linear regression on each relationship, only t
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
-After each pair of plots explain what the linear regression is modeling such as any relationships you notice and any other analysis you may have.
+![Temperature_NH](WeatherPy/TemperatureInnorthhemisphere.png)
 
-**Optional** You will be creating multiple linear regression plots. To optimize your code, write a function that creates the linear regression plots.
-
-Your final notebook must:
-
-* Randomly select **at least** 500 unique (non-repeat) cities based on latitude and longitude.
-* Perform a weather check on each of the cities using a series of successive API calls.
-* Include a print log of each city as it's being processed with the city number and city name.
-* Save a CSV of all retrieved data and a PNG image for each scatter plot.
-
-### Part II - VacationPy
-
-Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
+After running analysis on the weather data I used the information to imagin a plan for future vacations. Jupyter-gmaps and the Google Places API were used for this part of the activity.
 
 * **Note:** if you having trouble displaying the maps try running `jupyter nbextension enable --py gmaps` in your environment and retry.
 
