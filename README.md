@@ -10,7 +10,7 @@ The first requirement was to create a series of scatter plots to showcase the fo
 * Cloudiness (%) vs. Latitude
 * Wind Speed (mph) vs. Latitude
 
-![Temperature](Weatherpy/TemperatureInWorldCities.png)
+![Temperature](WeatherPy/TemperatureInWorldCities.png)
 
 Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
